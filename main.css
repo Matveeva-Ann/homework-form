@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.formRegistration, .formSingIN {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .formSingIN{
+    display: none;
+} */
+.userPhoto{
+    display: none;
+}
+.lableUserPhoto{
+    width: 190px;
+    height: 30px;
+    background-color: lightblue;
+    display: block;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #0000FF;
+    font-family: math;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 0 0 7px lightblue;
+    margin: -15px 0;
+}
+h2{
+    text-align: center;
+}
+.signUp, .signIN{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+    width: 35%;
+}
+.formInput, .btnSingup, .btnSingIN, .btnExit, .formInputSingIN{
+    width: 100%;
+    min-height: 45px;
+    padding: 15px 10px 5px;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 0 0 5px black;
+    font-size: 18px;
+}
+
+.formInput:focus, .formInputSingIN:focus{
+    outline: none;
+    box-shadow: 0 0 7px blue;
+}
+
+.parentForLable{
+    position: relative;
+    width: 100%;
+}
+
+.inputPlaceholder, .inputPlaceholderSingIN{
+    position: absolute; 
+    top: 30%;
+    left: 10px;
+    font-size: 20px;
+    color: rgb(83, 83, 83);
+    transition-duration: 0.5s;
+}
+.formInput:focus + .inputPlaceholder, .positionPlaceholder, .formInputSingIN:focus + .inputPlaceholderSingIN{
+    top: 2px;
+    left: 10px;
+    font-size: 14px;
+}
+
+.btnSingup, .btnSingIN, .btnExit{
+   background-color: rgb(95, 193, 254);
+   color: white;
+   box-shadow: none;
+   cursor: pointer;
+   padding: 5px 10px 5px;
+}
+
+.btnSingup:hover{
+   background-color: rgb(75, 181, 247);
+}
+.btnSingup:active, .btnSingIN:active, .btnExit:active{
+    transform: rotateX(17deg);
+}
+.signInNow, .signUpNow{
+    width: 100%;
+    margin-top: -30px;
+    font-size: 17px;
+    color: rgb(57, 177, 251);
+    padding: 10px 0px;
+    border: none;
+    background-color: transparent;
+    text-align: start;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btnSingIN, .btnExit{
+    background-color: #4ac371;
+    text-decoration: none;
+    text-align: center;
+    line-height: 35px;
+}
+.btnSingIN:hover{
+    background-color: #46af73;
+
+}
+
+.green, .green:focus{
+    box-shadow: 0 0 7px green;
+}
+.red, .red:focus{
+    box-shadow: 0 0 7px red;
+}
+
+.conteiner{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+}
+.userProfile{
+    min-width: 290px;
+    min-height: 40vh;
+    border:none;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+.userImg{
+    background-image: url(./img/woman.svg);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.img{
+    background-image: url(./img/man.svg);
+    background-size: cover;
+}
+.btnExit{
+    background-color: rgb(254, 60, 60);
+    width: 80%;
+    min-height: 35px;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+}
+.btnExit:hover{
+    background-color: red;
+}
+.userName{
+    font-size: 25px;
+}
+.userEmail{
+    font-size: 15px;
+}
+.parentMessage{
+    position: relative;
+}
+.message, .messageInvalid{
+    display: none;
+    width: 260px;
+    height: 25px;
+    background-color: red;
+    box-shadow: 0 0 2px red;
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    border-radius: 5px;
+    top: 47px;
+    left: 5px;
+    opacity: 0.5;
+    padding: 2px 5px;
+    line-height: 20px;
+}
+.btnSingup{
+    position: relative;
+}

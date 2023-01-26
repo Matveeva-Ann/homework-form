@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Login</title>
+</head>
+<body>
+  <div class="formSingIN">
+    <form name="signIN" class="signIN">
+      <h2>Please sign in</h2>
+      <div class="parentForLable">
+        <input type="text" class="formInputSingIN" id="inputEmailSingIN" name="registeredEmail" pattern="^\S+@[a-z]+\.[a-z]+"/>
+        <label for="inputEmailSingIN" class="inputPlaceholderSingIN">Email address</label>
+      </div>
+      <div class="parentForLable parentMessage">
+        <input type="password" class="formInputSingIN" id="inputPasswordSingIN" name="registeredPassword" pattern="\S{6,}"/>
+        <label for="inputPasswordSingIN" class="inputPlaceholderSingIN">Password</label>
+        <span class="messageInvalid"></span>
+      </div>
+      <button type="submit" class="btnSingIN">Sing In</button>
+      <a href="./formRegistration.html" class="signUpNow">Sign up now</a>
+    </form>
+   </div>
+ 
+<script src="./main.js" type="module"></script>
+<script src="./scritpLogin.js" type="module"></script>
+
+</body>
+</html>

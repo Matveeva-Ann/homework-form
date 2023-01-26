@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Registration</title>
+</head>
+<body>
+  <div class="formRegistration">
+    <form name="signUp" class="signUp">
+     <h2>Please sign up</h2>
+     <div class="parentForLable">
+       <input type="text" class="formInput" id="inputFirstName"  name="firstName" pattern="^\w+$" required/>
+       <label for="inputFirstName" class="inputPlaceholder">First name</label>
+     </div>
+     <div class="parentForLable">
+       <input type="text" class="formInput" id="inputSecondName" name="SecondName" pattern="^[a-zA-Z]+$" required/>
+       <label for="inputSecondName" class="inputPlaceholder">Second name</label>
+     </div>
+     <div class="parentForLable parentMessage">
+       <input type="text" class="formInput" id="inputEmail" name="email" pattern="^\S+@[a-z]+\.[a-z]+" required/>
+       <label for="inputEmail" class="inputPlaceholder">Email address</label>
+       <span class="message"></span>
+     </div>
+     <div class="parentForLable">
+       <input type="password" class="formInput" id="inputPassword" name="password" pattern="\S{6,}" required/>
+       <label for="inputPassword" class="inputPlaceholder">Password</label>
+     </div>
+     <label for="userPhoto" class="lableUserPhoto"> + Завантажити фото
+       <input type="file" class="userPhoto" id="userPhoto" name="userPhoto">
+     </label>
+      <button type="submit" class="btnSingup">Sign Up</button>
+     <a href="./fotmLogin.html" class="signInNow">Sign in now</a>
+    </form>
+  </div>
+ 
+
+<script src="./main.js" type="module"></script>
+<script src="./scriptRegistratiom.js" type="module"></script>
+
+</body>
+</html>
